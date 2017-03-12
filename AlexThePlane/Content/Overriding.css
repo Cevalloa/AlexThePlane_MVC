@@ -1,0 +1,42 @@
+﻿@font-face{
+
+	font-family: myFirstFont;
+	src:url(avenir-next-bold.ttf)
+}
+
+body, a, .videosLink, .mapLink {
+    color: white;
+    font-family:myFirstFont;
+    background-color:#fc2d07;
+}
+
+.footerLink {
+    color: #3ecde3;
+    background-color: #26292e;
+}
+
+html {
+    font-size: 14px;
+}
+
+.atpRedColor {
+   background-color: #3ecde3;
+}
+
+@include media-breakpoint-up(sm) {
+    html {
+        font-size: 16px;
+    }
+}
+
+@include media-breakpoint-up(md) {
+    html {
+        font-size: 20px;
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    html {
+        font-size: 28px;
+    }
+}
