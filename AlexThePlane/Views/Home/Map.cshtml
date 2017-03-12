@@ -11,4 +11,20 @@
     .atpHeaderColor {
         background-color: #42cc55;
     }
+    body {
+        background-color:#EFEFEF;
+    }
 </style>
+
+<script>
+    $(".videosLink").hover(function () {
+        $(this).css({ 'text-decoration': 'underline' });
+        $(".mapLink").css({ 'text-decoration': 'none' });
+  }, function () {
+        var cssObj = {
+            'text-decoration': 'none'
+        }
+        $(this).css(cssObj);
+        $(".mapLink").css({ 'text-decoration': 'underline' });
+    });
+</script>
