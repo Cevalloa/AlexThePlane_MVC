@@ -23,20 +23,56 @@ html {
    background-color: #3ecde3;
 }
 
-@include media-breakpoint-up(sm) {
-    html {
-        font-size: 16px;
+#map {
+    min-height: 250px;
+}
+
+.display-3 {
+    font-size: 40px;
+}
+
+.videosLink, .mapLink {
+    font-size: 1.25rem;
+}
+
+@media only screen and (min-width: 768px) {
+    #map {
+        min-height: 400px;
+    }
+
+    .display-3 {
+        font-size: 40px;
+    }
+
+    .videosLink, .mapLink {
+        font-size: 1.75rem;
+    }
+}
+@media only screen and (min-width: 992px) {
+    #map {
+        min-height: 400px;
+    }
+
+    .display-3 {
+        font-size: 50px;
+    }
+
+    .videosLink, .mapLink {
+        font-size: 1.75rem;
     }
 }
 
-@include media-breakpoint-up(md) {
-    html {
-        font-size: 20px;
+@media only screen and (min-width: 1200px) {
+    #map {
+        min-height: 450px;
+    }
+    .display-3 {
+        font-size: 50px;
+    }
+
+    .videosLink, .mapLink {
+        font-size: 1.75rem;
     }
 }
 
-@include media-breakpoint-up(lg) {
-    html {
-        font-size: 28px;
-    }
-}
+
