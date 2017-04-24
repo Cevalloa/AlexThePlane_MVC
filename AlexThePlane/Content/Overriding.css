@@ -1,13 +1,24 @@
 ﻿@font-face{
 
-	font-family: myFirstFont;
+	font-family: titleFont;
 	src:url(avenir-next-bold.ttf)
 }
 
-body, a, .videosLink, .mapLink {
-    color: white;
-    font-family:myFirstFont;
-    background-color:#fc2d07;
+@font-face {
+    font-family: regularFont;
+    src: url(avenir-next-regular.ttf)
+}
+
+body, a {
+    color: #26292e;
+    font-family: titleFont;
+    background-color: #F5F5F5;
+    /* background-color:#fc2d07; */
+}
+
+.videosLink, .mapLink, .atpHeaderLinkColor {
+    font-family:titleFont;
+    color: #1ba4ba;
 }
 
 .footerLink {
@@ -19,8 +30,8 @@ html {
     font-size: 14px;
 }
 
-.atpRedColor {
-   background-color: #3ecde3;
+.atpHeaderColor {
+    background-color: #F5F5F5;
 }
 
 #map {
