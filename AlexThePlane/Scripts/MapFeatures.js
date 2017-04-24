@@ -214,6 +214,8 @@
             var KEF = { lat: 63.9868067, lng: -22.6279668 }
             var MEX = { lat: 19.4360812, lng: -99.0741023 }
             var MUC = { lat: 48.3536656, lng: 11.7728339 }
+            var UIO = { lat: -0.1225821, lng: -78.3607524 }
+            var YVR = { lat: 49.1966948, lng: -123.1837063}
 
             var marker = new google.maps.Marker({
                 position: AMS,
@@ -258,14 +260,40 @@
                 map: map
             });
 
+            var marker = new google.maps.Marker({
+                position: UIO,
+                title: "UIO - Quito, Ecuador",
+                map: map
+            });
+
+            var marker = new google.maps.Marker({
+                position: YVR,
+                title: "YVR - Vancouver, Canada",
+                map: map
+            });
+
+
             /* Domestic */
-            var ABQ = { lat: 35.0433377, lng: -106.6151025 };
+            var ABQ = { lat: 35.0433377, lng: -106.6151025 }
+            var ANC = { lat: 61.1758889, lng: -149.9922731 }
+            var ATL = { lat: 33.6407326, lng: -84.4298941 }
 
             /* Markers */
             var marker = new google.maps.Marker({
                 position: ABQ,
-                title: "ABQ!",
-                scaledSize: new google.maps.Size(50, 50),
+                title: "ABQ - Albuquerque, New Mexico",
+                map: map
+            });
+
+            var marker = new google.maps.Marker({
+                position: ANC,
+                title: "ANC - Anchorage, Alaska",
+                map: map
+            });
+
+            var marker = new google.maps.Marker({
+                position: ATL,
+                title: "ATL - Atlanta, Georgia",
                 map: map
             });
 
