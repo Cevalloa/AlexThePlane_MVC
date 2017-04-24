@@ -277,6 +277,14 @@
             var ABQ = { lat: 35.0433377, lng: -106.6151025 }
             var ANC = { lat: 61.1758889, lng: -149.9922731 }
             var ATL = { lat: 33.6407326, lng: -84.4298941 }
+            var AUS = { lat: 30.1974338, lng: -97.6684998 }
+            var BOI = { lat: 43.565827, lng: -116.22451 }
+            var BUR = { lat: 34.1983166, lng: -118.3595976 }
+            var DEN = { lat: 39.8561004, lng: -104.6759316 }
+            var DFW = { lat: 32.8998136, lng: -97.0425292}
+            var EWR = { lat: 40.6884175, lng: -74.175133 }
+            var GEG = { lat: 47.6217172, lng: -117.5370055 }
+            var HLN = { lat: 46.6100257, lng: -111.989929 }
 
             /* Markers */
             var marker = new google.maps.Marker({
@@ -296,6 +304,55 @@
                 title: "ATL - Atlanta, Georgia",
                 map: map
             });
+
+            var marker = new google.maps.Marker({
+                position: AUS,
+                title: "AUS - Austin, Texas",
+                map: map
+            });
+
+            var marker = new google.maps.Marker({
+                position: BOI,
+                title: "BOI - Boise, Idaho",
+                map: map
+            });
+
+            var marker = new google.maps.Marker({
+                position: BUR,
+                title: "BUR - Burbank, California",
+                map: map
+            });
+
+            var marker = new google.maps.Marker({
+                position: DEN,
+                title: "DEN - Denver, Colorado",
+                map: map
+            });
+
+            var marker = new google.maps.Marker({
+                position: DFW,
+                title: "DFW - Dallas, Texas",
+                map: map
+            });
+
+            var marker = new google.maps.Marker({
+                position: EWR,
+                title: "EWR - Newark, New Jersey",
+                map: map
+            });
+
+            var marker = new google.maps.Marker({
+                position: GEG,
+                title: "GEG - Spokane, Washington",
+                map: map
+            });
+
+            var marker = new google.maps.Marker({
+                position: HLN,
+                title: "HLN - Helena, Montana",
+                map: map
+            });
+
 
  /*       var image = {
             url: 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png',
