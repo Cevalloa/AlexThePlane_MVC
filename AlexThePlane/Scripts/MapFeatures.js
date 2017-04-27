@@ -191,11 +191,10 @@
         });
 
             var flightPlanCoordinates = [
-                { lat: 37.772, lng: -122.214 },
-                { lat: 21.291, lng: -157.821 },
-                { lat: -18.142, lng: 178.431 },
-                { lat: -27.467, lng: 153.027 }
+                { lat: 47.4502499, lng: -122.3088165 },
+                { lat: 52.3105419, lng: 4.7660804 }
             ];
+
             var flightPath = new google.maps.Polyline({
                 path: flightPlanCoordinates,
                 geodesic: true,
@@ -285,6 +284,19 @@
             var EWR = { lat: 40.6884175, lng: -74.175133 }
             var GEG = { lat: 47.6217172, lng: -117.5370055 }
             var HLN = { lat: 46.6100257, lng: -111.989929 }
+            var HNL = { lat: 21.3211849, lng: -157.9307321 }
+            var KOA = { lat: 19.736916, lng: 156.0451186}
+            var KTN = { lat: 55.3554136, lng: -131.7127544 }
+            var IAH = { lat: 29.9902245, lng: -74.1073455 }
+            var LAS = { lat: 36.0840041, lng: -115.1559329 }
+            var LAX = { lat: 33.9414147, lng: -118.4105475 }
+            var OGG = { lat: 20.8967924, lng: -156.4351319}
+            var ORD = { lat: 41.9741665, lng: -87.9095154 }
+            var PDX = { lat: 45.5897694, lng: -122.5972882 }
+            var SEA = { lat: 47.4502499, lng: -122.3110105 }
+            var SAN = { lat: 32.7338006, lng: 117.1954978 }
+            var SFO = { lat: 37.6213129, lng: -122.3811494 }
+            var SMF = { lat: 38.6950854, lng: -121.5900648 }
 
             /* Markers */
             var marker = new google.maps.Marker({
@@ -352,6 +364,87 @@
                 title: "HLN - Helena, Montana",
                 map: map
             });
+
+            var marker = new google.maps.Marker({
+                position: HNL,
+                title: "HNL - Honolulu, Hawaii",
+                map: map
+            })
+
+            var marker = new google.maps.Marker({
+                position: HNL,
+                title: "KOA - Kona, Hawaii",
+                map: map
+            })
+
+            var marker = new google.maps.Marker({
+                position: KTN,
+                title: "KTN - Ketchikan, Alaska",
+                map: map
+            })
+
+            var marker = new google.maps.Marker({
+                position: IAH,
+                title: "IAH - Houston, Texas",
+                map: map
+            })
+
+            var marker = new google.maps.Marker({
+                position: LAS,
+                title: "LAS - Las Vega, Nevada",
+                map: map
+            })
+
+            var marker = new google.maps.Marker({
+                position: LAX,
+                title: "LAX - Los Angeles, California",
+                map: map
+            })
+
+            var marker = new google.maps.Marker({
+                position: OGG,
+                title: "OGG - Maui, Hawaii",
+                map: map
+            })
+
+            var marker = new google.maps.Marker({
+                position: ORD,
+                title: "ORD - Chicago, Illinois",
+                map: map
+            })
+
+            var marker = new google.maps.Marker({
+                position: PDX,
+                title: "PDX - Portland, Oregon",
+                map: map
+            })
+
+            var marker = new google.maps.Marker({
+                position: SAN,
+                title: "SAN - San Diego, California",
+                map: map
+            })
+
+            var marker = new google.maps.Marker({
+                position: SEA,
+                title: "SEA - Seattle, Washington",
+                map: map
+            })
+
+            var marker = new google.maps.Marker({
+                position: SFO,
+                title: "SFO - San Francisco, California",
+                map: map
+            })
+
+            var marker = new google.maps.Marker({
+                position: SFO,
+                title: "SFO - San Francisco, California",
+                map: map
+            })
+
+
+
 
 
  /*       var image = {
