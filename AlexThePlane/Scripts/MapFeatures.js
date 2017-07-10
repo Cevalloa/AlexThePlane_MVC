@@ -308,6 +308,7 @@
             var IAH = { lat: 29.9902245, lng: -95.336782 }
             var JFK = { lat: 40.6413111, lng: -73.7803278 }
             var LAS = { lat: 36.0840041, lng: -115.1559329 }
+            var OAK = { lat: 37.7125689, lng: -122.2197428}
             var LAX = { lat: 33.9414147, lng: -118.4105475 }
             var OGG = { lat: 20.8967924, lng: -156.4351319}
             var ORD = { lat: 41.9741665, lng: -87.9095154 }
@@ -429,6 +430,12 @@
             var markerLAS = new google.maps.Marker({
                 position: LAS,
                 title: "LAS - Las Vega, Nevada",
+                map: map
+            });
+
+            var markerOAK = new google.maps.Marker({
+                position: OAK,
+                title: "OAK - Oakland, California",
                 map: map
             });
 
@@ -1048,6 +1055,70 @@
                 strokeWeight: 2
             });
 
+            var SEA_FAI_FP = new google.maps.Polyline({
+                path: [SEA, FAI],
+                geodesic: true,
+                strokeColor: redColor,
+                strokeOpacity: 1.0,
+                strokeWeight: 2
+            });
+
+            var SEA_SNA_FP = new google.maps.Polyline({
+                path: [SEA, SNA],
+                geodesic: true,
+                strokeColor: redColor,
+                strokeOpacity: 1.0,
+                strokeWeight: 2
+            });
+
+            var SNA_STS_FP = new google.maps.Polyline({
+                path: [SNA, STS],
+                geodesic: true,
+                strokeColor: redColor,
+                strokeOpacity: 1.0,
+                strokeWeight: 2
+            });
+
+            var STS_LAX_FP = new google.maps.Polyline({
+                path: [STS, LAX],
+                geodesic: true,
+                strokeColor: redColor,
+                strokeOpacity: 1.0,
+                strokeWeight: 2
+            });
+
+            var SEA_OAK_FP = new google.maps.Polyline({
+                path: [SEA, OAK],
+                geodesic: true,
+                strokeColor: redColor,
+                strokeOpacity: 1.0,
+                strokeWeight: 2
+            });
+
+            var ATL_EZE_FP = new google.maps.Polyline({
+                path: [ATL, EZE],
+                geodesic: true,
+                strokeColor: redColor,
+                strokeOpacity: 1.0,
+                strokeWeight: 2
+            });
+
+            var SFO_RDM_FP = new google.maps.Polyline({
+                path: [ATL, RDM],
+                geodesic: true,
+                strokeColor: redColor,
+                strokeOpacity: 1.0,
+                strokeWeight: 2
+            });
+
+            var SEA_RDM_FP = new google.maps.Polyline({
+                path: [SEA, RDM],
+                geodesic: true,
+                strokeColor: redColor,
+                strokeOpacity: 1.0,
+                strokeWeight: 2
+            });
+
             LAX_HND_FP.setMap(map);
             HND_CDG_FP.setMap(map);
             CDG_EZE_FP.setMap(map);
@@ -1089,6 +1160,14 @@
             SEA_ATL_FP.setMap(map);
             SEA_KEF_FP.setMap(map);
             SEA_FRA_FP.setMap(map);
+            SEA_FAI_FP.setMap(map);
+            SEA_SNA_FP.setMap(map);
+            SEA_OAK_FP.setMap(map);
+            SEA_RDM_FP.setMap(map);
+
+            SNA_STS_FP.setMap(map);
+            STS_LAX_FP.setMap(map);
+            
         
 
             PDX_BUR_FP.setMap(map);
@@ -1108,7 +1187,9 @@
             FRA_MUC_FP.setMap(map);
             AMS_GOT_FP.setMap(map);
             EWR_LAX_FP.setMap(map);
-
+            ATL_EZE_FP.setMap(map);
+            SFO_RDM_FP.setMap(map);
+           
 
 
 
