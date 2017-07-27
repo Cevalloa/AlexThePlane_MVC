@@ -1104,7 +1104,7 @@
             });
 
             var SFO_RDM_FP = new google.maps.Polyline({
-                path: [ATL, RDM],
+                path: [SFO, RDM],
                 geodesic: true,
                 strokeColor: redColor,
                 strokeOpacity: 1.0,
