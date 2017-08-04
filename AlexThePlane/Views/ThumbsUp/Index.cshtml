@@ -1,0 +1,317 @@
+﻿
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<script>
+    (function (i, s, o, g, r, a, m) {
+    i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+    }, i[r].l = 1 * new Date(); a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+     ga('create', 'UA-44942014-6', 'auto');
+     ga('send', 'pageview');
+
+     $(".videosLink").hover(function () {
+         $(this).css({ 'text-decoration': 'underline' });
+         $(".mapLink").css({ 'text-decoration': 'none' });
+     }, function () {
+         var cssObj = {
+             'text-decoration': 'none'
+         }
+         $(this).css(cssObj);
+         $(".thumbsUpLink").css({ 'text-decoration': 'underline' });
+         });
+
+     $(".mapLink").hover(function () {
+         $(this).css({ 'text-decoration': 'underline' });
+         $(".videosLink").css({ 'text-decoration': 'none' });
+     }, function () {
+         var cssObj = {
+             'text-decoration': 'none'
+         }
+         $(this).css(cssObj);
+         $(".thumbsUpLink").css({ 'text-decoration': 'underline' });
+     });
+
+</script>
+
+<div class="container mx-auto py-3 text-xs-center w-100" style="background-color:#F5F5F5;">
+
+    <div class="row mx-auto">
+        <h4>I was asked to "do a pose" for a photo </h4>
+        <h5>The rest is history</h5>
+        <br>
+
+    </div>
+
+    <div class="row mx-auto">
+        <div class="col-lg-4 col-sm-4">
+            <img src="~/Content/Images/2014/1_F8_GoldenGate.jpg" class="img-fluid" />
+            
+            <h5 class="pt-1">Golden Gate Bridge </h5>
+            <h6 class="pb-1">San Francisco, California (2014) </h6>
+        </div>
+        <div class="col-lg-4 col-sm-4">
+            <img src="~/Content/Images/2014/2_Disneyland.jpg" class="img-fluid"  />
+            <h5 class="pt-1">Disneyland</h5> 
+            <h6 class="pb-1">Anaheim, California (2014) </h6>
+        </div>
+        <div class="col-lg-4 col-sm-4">
+            <img src="~/Content/Images/2015/1_PortlandOregon.jpg" class="img-fluid" />
+            <h5 class="pt-1"> Portland Skyline </h5> 
+            <h6 class="pb-1">Portland, Oregon (2015) </h6>
+        </div>
+    </div>
+
+    <div class="row mx-auto">
+        <div class="col-lg-4 col-sm-4">
+            <img src="~/Content/Images/2015/2_Griffith.jpg" class="img-fluid" />
+
+            <h5 class="pt-1">Griffith Observatory </h5>
+            <h6 class="pb-1">Los Angeles, California (2015)</h6>
+        </div>
+        <div class="col-lg-4 col-sm-4">
+            <img src="~/Content/Images/2015/3_theBean.jpg" class="img-fluid" />
+            <h5 class="pt-1">The Bean</h5>
+            <h6 class="pb-1">Chicago, Illinois (2015)</h6>
+        </div>
+        <div class="col-lg-4 col-sm-4">
+            <img src="~/Content/Images/2015/4_LAX.jpg" class="img-fluid" />
+            <h5 class="pt-1"> Los Angeles International Airport </h5>
+            <h6 class="pb-1">Los Angeles, California (2015)</h6>
+        </div>
+    </div>
+
+    <div class="row mx-auto">
+        <div class="col-lg-4 col-sm-4">
+            <img src="~/Content/Images/2015/5_Reno.jpg" class="img-fluid" />
+
+            <h5 class="pt-1">Reno Sign </h5>
+            <h6 class="pb-1">Reno, Nevada (2015)</h6>
+        </div>
+        <div class="col-lg-4 col-sm-4">
+            <img src="~/Content/Images/2015/6_TimesSquare.jpg" class="img-fluid" />
+            <h5 class="pt-1">Times Square</h5>
+            <h6 class="pb-1">New York City, New York (2015)</h6>
+        </div>
+        <div class="col-lg-4 col-sm-4">
+            <img src="~/Content/Images/2015/7_StatueOfLiberty.jpg" class="img-fluid" />
+            <h5 class="pt-1">Statue Of Liberty </h5>
+            <h6 class="pb-1">New York City, New York (2015)</h6>
+        </div>
+    </div>
+
+    <div class="row mx-auto">
+        <div class="col-lg-4 col-sm-4">
+            <img src="~/Content/Images/2015/8_NYCSkyline.jpg" class="img-fluid" />
+
+            <h5 class="pt-1">Manhattan Skyline </h5>
+            <h6 class="pb-1">New York City, New York (2015)</h6>
+        </div>
+        <div class="col-lg-4 col-sm-4">
+            <img src="~/Content/Images/2015/9_Anchorage.jpg" class="img-fluid" />
+            <h5 class="pt-1">Anchorage International Airport</h5>
+            <h6 class="pb-1">Anchorage, Alaska (2015)</h6>
+        </div>
+        <div class="col-lg-4 col-sm-4">
+            <img src="~/Content/Images/2015/91_LasVegasSign.jpg" class="img-fluid" />
+            <h5 class="pt-1">Las Vegas Sign </h5>
+            <h6 class="pb-1">Las Vegas, Nevada (2015)</h6>
+        </div>
+    </div>
+
+    <div class="row mx-auto">
+        <div class="col-lg-4 col-sm-4">
+            <img src="~/Content/Images/2016/1_Sacramento.jpg" class="img-fluid" />
+
+            <h5 class="pt-1">California State Capital </h5>
+            <h6 class="pb-1">Sacramento, California (2016)</h6>
+        </div>
+        <div class="col-lg-4 col-sm-4">
+            <img src="~/Content/Images/2016/2_LasVegasStrip.jpg" class="img-fluid" />
+            <h5 class="pt-1">Las Vegas Strip</h5>
+            <h6 class="pb-1">Las Vegas, Nevada (2016)</h6>
+        </div>
+        <div class="col-lg-4 col-sm-4">
+            <img src="~/Content/Images/2016/3_HollywoodSign.jpg" class="img-fluid" />
+            <h5 class="pt-1">Back Of Hollywood Sign </h5>
+            <h6 class="pb-1">Los Angeles, California (2016)</h6>
+        </div>
+    </div>
+
+    <div class="row mx-auto">
+        <div class="col-lg-4 col-sm-4">
+            <img src="~/Content/Images/2016/4_Austin.jpg" class="img-fluid" />
+
+            <h5 class="pt-1">Austin Mural </h5>
+            <h6 class="pb-1">Austin, Texas (2016)</h6>
+        </div>
+        <div class="col-lg-4 col-sm-4">
+            <img src="~/Content/Images/2016/5_Cabos.jpg" class="img-fluid" />
+            <h5 class="pt-1">Cabo Beach</h5>
+            <h6 class="pb-1">Los Cabos, Mexico (2016)</h6>
+        </div>
+        <div class="col-lg-4 col-sm-4">
+            <img src="~/Content/Images/2016/6_Plane.jpg" class="img-fluid" />
+            <h5 class="pt-1">Alaska Airlines Hanger </h5>
+            <h6 class="pb-1">Seattle, Washington (2016)</h6>
+        </div>
+    </div>
+
+    <div class="row mx-auto">
+        <div class="col-lg-4 col-sm-4">
+            <img src="~/Content/Images/2016/7_IcelandTower.jpg" class="img-fluid" />
+
+            <h5 class="pt-1">Hallgrímskirkja </h5>
+            <h6 class="pb-1">Reykjavík, Iceland (2016)</h6>
+        </div>
+        <div class="col-lg-4 col-sm-4">
+            <img src="~/Content/Images/2016/8_ABC_HNL.jpg" class="img-fluid" />
+            <h5 class="pt-1">ABC Store</h5>
+            <h6 class="pb-1">Honolulu, Hawaii (2016)</h6>
+        </div>
+        <div class="col-lg-4 col-sm-4">
+            <img src="~/Content/Images/2016/9_CaboDoorway.jpg" class="img-fluid" />
+            <h5 class="pt-1">Random House </h5>
+            <h6 class="pb-1">San Jose Del Cabo, Mexico (2016)</h6>
+        </div>
+    </div>
+
+    <div class="row mx-auto">
+        <div class="col-lg-4 col-sm-4">
+            <img src="~/Content/Images/2016/91_FrankfurtMon.jpg" class="img-fluid" />
+
+            <h5 class="pt-1">Frankfurt Monastery </h5>
+            <h6 class="pb-1">Frankfurt, Germany (2016)</h6>
+        </div>
+        <div class="col-lg-4 col-sm-4">
+            <img src="~/Content/Images/2016/92_MunichMariplatz.jpg" class="img-fluid" />
+            <h5 class="pt-1">Marienplatz</h5>
+            <h6 class="pb-1">Munich, Germany (2016)</h6>
+        </div>
+        <div class="col-lg-4 col-sm-4">
+            <img src="~/Content/Images/2016/93_CenterOfTheWorld.jpg" class="img-fluid" />
+            <h5 class="pt-1">Center Of The World (Equator line) </h5>
+            <h6 class="pb-1">Quito, Ecuador (2016)</h6>
+        </div>
+    </div>
+
+    <div class="row mx-auto">
+        <div class="col-lg-4 col-sm-4">
+            <img src="~/Content/Images/2016/94_QuitoSkyline.jpg" class="img-fluid" />
+
+            <h5 class="pt-1">Quito Skyline </h5>
+            <h6 class="pb-1">Quito, Ecuador (2016)</h6>
+        </div>
+        <div class="col-lg-4 col-sm-4">
+            <img src="~/Content/Images/2016/95_Sweden.jpg" class="img-fluid" />
+            <h5 class="pt-1">Swedish Docks</h5>
+            <h6 class="pb-1">Gothenburg, Sweden (2016)</h6>
+        </div>
+        <div class="col-lg-4 col-sm-4">
+            <img src="~/Content/Images/2016/96_TimesSquare.jpg" class="img-fluid" />
+            <h5 class="pt-1">Times Square </h5>
+            <h6 class="pb-1">New York City, New York (2016)</h6>
+        </div>
+    </div>
+
+    <div class="row mx-auto">
+        <div class="col-lg-4 col-sm-4">
+            <img src="~/Content/Images/2017/1_MauiVolcano.jpg" class="img-fluid" />
+
+            <h5 class="pt-1">Haleakalae Volcano </h5>
+            <h6 class="pb-1">Maui, Hawaii (2017)</h6>
+        </div>
+        <div class="col-lg-4 col-sm-4">
+            <img src="~/Content/Images/2017/2_HKSkyline.jpg" class="img-fluid" />
+            <h5 class="pt-1">Hong Kong Skyline</h5>
+            <h6 class="pb-1">Hong Kong, China (2017)</h6>
+        </div>
+        <div class="col-lg-4 col-sm-4">
+            <img src="~/Content/Images/2017/3_HKGStreet.jpg" class="img-fluid" />
+            <h5 class="pt-1">Downtown Hong Kong </h5>
+            <h6 class="pb-1">Hong Kong, China (2017)</h6>
+        </div>
+    </div>
+
+    <div class="row mx-auto">
+        <div class="col-lg-4 col-sm-4">
+            <img src="~/Content/Images/2017/4_KonaCook.jpg" class="img-fluid" />
+
+            <h5 class="pt-1">Captain Cook Monument </h5>
+            <h6 class="pb-1">Kona, Hawaii (2017)</h6>
+        </div>
+        <div class="col-lg-4 col-sm-4">
+            <img src="~/Content/Images/2017/5_BreakingBad.jpg" class="img-fluid" />
+            <h5 class="pt-1">Walter White's House</h5>
+            <h6 class="pb-1">Albuquerque, New Mexico (2017)</h6>
+        </div>
+        <div class="col-lg-4 col-sm-4">
+            <img src="~/Content/Images/2017/6_TheBean.jpg" class="img-fluid" />
+            <h5 class="pt-1">The Bean </h5>
+            <h6 class="pb-1">Chicago, Illinois (2017)</h6>
+        </div>
+    </div>
+
+    <div class="row mx-auto">
+        <div class="col-lg-4 col-sm-4">
+            <img src="~/Content/Images/2017/7_AnchorageMuseum.jpg" class="img-fluid" />
+
+            <h5 class="pt-1">Anchorage Museum </h5>
+            <h6 class="pb-1">Anchorage, Alaska (2017)</h6>
+        </div>
+        <div class="col-lg-4 col-sm-4">
+            <img src="~/Content/Images/2017/8_GoldenGateBridge.jpg" class="img-fluid" />
+            <h5 class="pt-1">Golden Gate Bridge</h5>
+            <h6 class="pb-1">San Francisco, California (2017)</h6>
+        </div>
+        <div class="col-lg-4 col-sm-4">
+            <img src="~/Content/Images/2017/9_AlaskaJet.jpg" class="img-fluid" />
+            <h5 class="pt-1">Alaska Airlines Hanger </h5>
+            <h6 class="pb-1">Seattle, Washington (2017)</h6>
+        </div>
+    </div>
+
+    <div class="row mx-auto">
+        <div class="col-lg-4 col-sm-4">
+            <img src="~/Content/Images/2017/91_Tokyo.jpg" class="img-fluid" />
+
+            <h5 class="pt-1">Chiyoda </h5>
+            <h6 class="pb-1">Tokyo, Japan (2017)</h6>
+        </div>
+        <div class="col-lg-4 col-sm-4">
+            <img src="~/Content/Images/2017/92_Louvre.jpg" class="img-fluid" />
+            <h5 class="pt-1">Louvre</h5>
+            <h6 class="pb-1">Paris, France (2017)</h6>
+        </div>
+        <div class="col-lg-4 col-sm-4">
+            <img src="~/Content/Images/2017/93_EiffelTower.jpg" class="img-fluid" />
+            <h5 class="pt-1">Eiffel Tower </h5>
+            <h6 class="pb-1">Paris, France (2017)</h6>
+        </div>
+    </div>
+
+    <div class="row mx-auto">
+        <div class="col-lg-4 col-sm-4">
+            <img src="~/Content/Images/2017/94_SanMartin.jpg" class="img-fluid" />
+
+            <h5 class="pt-1">San Martin Statue </h5>
+            <h6 class="pb-1">Buenos Aires, Argentina (2017)</h6>
+        </div>
+        <div class="col-lg-4 col-sm-4">
+            <img src="~/Content/Images/2017/95_LastBlockbuster.jpg" class="img-fluid" />
+            <h5 class="pt-1">One Of The Last Blockbusters</h5>
+            <h6 class="pb-1">Fairbanks, Alaska (2017)</h6>
+        </div>
+        <div class="col-lg-4 col-sm-4">
+            <img src="~/Content/Images/2017/96_Cravery.jpg" class="img-fluid" />
+            <h5 class="pt-1">The Cravery </h5>
+            <h6 class="pb-1">San Diego, California (2017)</h6>
+        </div>
+    </div>
+
+</div>
+

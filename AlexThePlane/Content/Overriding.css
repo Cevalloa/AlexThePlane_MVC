@@ -5,85 +5,89 @@
 }
 
 @font-face {
-    font-family: regularFont;
-    src: url(avenir-next-regular.ttf)
+	font-family: regularFont;
+	src: url(avenir-next-regular.ttf)
 }
 
 body, a {
-    color: #26292e;
-    font-family: titleFont;
-    background-color: #F5F5F5;
-    /* background-color:#fc2d07; */
+	color: #26292e;
+	font-family: titleFont;
+	background-color: #F5F5F5;
+	/* background-color:#fc2d07; */
 }
 
-.videosLink, .mapLink, .atpHeaderLinkColor {
-    font-family:titleFont;
-    color: #1ba4ba;
+.videosLink, .mapLink, .thumbsUpLink, .atpHeaderLinkColor {
+	font-family:titleFont;
+	color: #1ba4ba;
 }
 
 .footerLink {
-    color: #3ecde3;
-    background-color: #26292e;
+	color: #3ecde3;
+	background-color: #26292e;
 }
 
 html {
-    font-size: 14px;
+	font-size: 14px;
 }
 
 .atpHeaderColor {
-    background-color: #F5F5F5;
+	background-color: #F5F5F5;
 }
 
 #map {
-    min-height: 250px;
+	min-height: 250px;
 }
 
 .display-3 {
-    font-size: 40px;
+	font-size: 40px;
 }
 
 .videosLink, .mapLink {
-    font-size: 1.25rem;
+	font-size: 1.25rem;
+}
+
+.thumbsUpLink {
+    font-size: 1.50rem;
 }
 
 @media only screen and (min-width: 768px) {
-    #map {
-        min-height: 400px;
-    }
+	#map {
+		min-height: 400px;
+	}
 
-    .display-3 {
-        font-size: 40px;
-    }
+	.display-3 {
+		font-size: 40px;
+	}
 
-    .videosLink, .mapLink {
-        font-size: 1.75rem;
-    }
+	.videosLink, .mapLink {
+		font-size: 1.75rem;
+	}
 }
 @media only screen and (min-width: 992px) {
-    #map {
-        min-height: 400px;
-    }
+	#map {
+		min-height: 400px;
+	}
 
-    .display-3 {
-        font-size: 50px;
-    }
+	.display-3 {
+		font-size: 50px;
+	}
 
-    .videosLink, .mapLink {
-        font-size: 1.75rem;
-    }
+	.videosLink, .mapLink {
+		font-size: 1.75rem;
+	}
 }
 
 @media only screen and (min-width: 1200px) {
-    #map {
-        min-height: 450px;
-    }
-    .display-3 {
-        font-size: 50px;
-    }
+	#map {
+		min-height: 450px;
+	}
+	.display-3 {
+		font-size: 50px;
+	}
 
-    .videosLink, .mapLink {
-        font-size: 1.75rem;
-    }
+	.videosLink, .mapLink {
+		font-size: 1.75rem;
+	}
 }
 
 

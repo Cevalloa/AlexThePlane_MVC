@@ -37,6 +37,17 @@
         }
         $(this).css(cssObj);
         $(".mapLink").css({ 'text-decoration': 'underline' });
+          });
+
+    $(".thumbsUpLink").hover(function () {
+        $(this).css({ 'text-decoration': 'underline' });
+        $(".mapLink").css({ 'text-decoration': 'none' });
+    }, function () {
+        var cssObj = {
+            'text-decoration': 'none'
+        }
+        $(this).css(cssObj);
+        $(".mapLink").css({ 'text-decoration': 'underline' });
     });
 </script>
 <style>

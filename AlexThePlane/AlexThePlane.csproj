@@ -119,6 +119,48 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\Images\2015\2_Griffith.jpg" />
+    <Content Include="Content\Images\2015\1_PortlandOregon.jpg" />
+    <Content Include="Content\Images\2014\2_Disneyland.jpg" />
+    <Content Include="Content\Images\2014\1_F8_GoldenGate.jpg" />
+    <Content Include="Content\Images\2015\3_theBean.jpg" />
+    <Content Include="Content\Images\2015\4_LAX.jpg" />
+    <Content Include="Content\Images\2015\5_Reno.jpg" />
+    <Content Include="Content\Images\2015\6_TimesSquare.jpg" />
+    <Content Include="Content\Images\2015\7_StatueOfLiberty.jpg" />
+    <Content Include="Content\Images\2015\8_NYCSkyline.jpg" />
+    <Content Include="Content\Images\2015\9_Anchorage.jpg" />
+    <Content Include="Content\Images\2015\91_LasVegasSign.jpg" />
+    <Content Include="Content\Images\2016\8_ABC_HNL.jpg" />
+    <Content Include="Content\Images\2016\1_Sacramento.jpg" />
+    <Content Include="Content\Images\2016\2_LasVegasStrip.jpg" />
+    <Content Include="Content\Images\2016\3_HollywoodSign.jpg" />
+    <Content Include="Content\Images\2016\4_Austin.jpg" />
+    <Content Include="Content\Images\2016\5_Cabos.jpg" />
+    <Content Include="Content\Images\2016\6_Plane.jpg" />
+    <Content Include="Content\Images\2016\7_IcelandTower.jpg" />
+    <Content Include="Content\Images\2016\9_CaboDoorway.jpg" />
+    <Content Include="Content\Images\2016\92_MunichMariplatz.jpg" />
+    <Content Include="Content\Images\2016\91_FrankfurtMon.jpg" />
+    <Content Include="Content\Images\2016\93_CenterOfTheWorld.jpg" />
+    <Content Include="Content\Images\2016\94_QuitoSkyline.jpg" />
+    <Content Include="Content\Images\2016\95_Sweden.jpg" />
+    <Content Include="Content\Images\2016\96_TimesSquare.jpg" />
+    <Content Include="Content\Images\2017\1_MauiVolcano.jpg" />
+    <Content Include="Content\Images\2017\2_HKSkyline.jpg" />
+    <Content Include="Content\Images\2017\3_HKGStreet.jpg" />
+    <Content Include="Content\Images\2017\4_KonaCook.jpg" />
+    <Content Include="Content\Images\2017\5_BreakingBad.jpg" />
+    <Content Include="Content\Images\2017\6_TheBean.jpg" />
+    <Content Include="Content\Images\2017\7_AnchorageMuseum.jpg" />
+    <Content Include="Content\Images\2017\9_AlaskaJet.jpg" />
+    <Content Include="Content\Images\2017\8_GoldenGateBridge.jpg" />
+    <Content Include="Content\Images\2017\91_Tokyo.jpg" />
+    <Content Include="Content\Images\2017\92_Louvre.jpg" />
+    <Content Include="Content\Images\2017\93_EiffelTower.jpg" />
+    <Content Include="Content\Images\2017\94_SanMartin.jpg" />
+    <Content Include="Content\Images\2017\95_LastBlockbuster.jpg" />
+    <Content Include="Content\Images\2017\96_Cravery.jpg" />
     <Content Include="Content\Overriding.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -137,6 +179,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\MapController.cs" />
+    <Compile Include="Controllers\ThumbsUpController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -157,6 +200,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
     <Content Include="Views\Map\Index.cshtml" />
+    <Content Include="Views\ThumbsUp\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
