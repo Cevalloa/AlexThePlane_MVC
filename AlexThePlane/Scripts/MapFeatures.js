@@ -295,6 +295,7 @@
             var ATL = { lat: 33.6407326, lng: -84.4298941 }
             var AUS = { lat: 30.1974338, lng: -97.6684998 }
             var BOI = { lat: 43.565827, lng: -116.22451 }
+            var BRW = { lat: 71.286132, lng: -156.778593 }
             var BUR = { lat: 34.1983166, lng: -118.3595976 }
             var DEN = { lat: 39.8561004, lng: -104.6759316 }
             var DFW = { lat: 32.8998136, lng: -97.0425292}
@@ -317,6 +318,7 @@
             var RNO = { lat: 39.4995907, lng: -119.7680951}
             var SEA = { lat: 47.4502499, lng: -122.3110105 }
             var SAN = { lat: 32.7338006, lng: -117.1954978 }
+            var SCC = { lat: 70.1971592, lng: -148.4610843 }
             var SFO = { lat: 37.6213129, lng: -122.3811494 }
             var SLC = { lat: 40.7899404, lng: -111.9790706}
             var SMF = { lat: 38.6950854, lng: -121.5900648 }
@@ -352,6 +354,12 @@
             var markerBOI = new google.maps.Marker({
                 position: BOI,
                 title: "BOI - Boise, Idaho",
+                map: map
+            });
+
+            var markerBRW = new google.maps.Marker({
+                position: BRW,
+                title: "BRW - Barrow, Alaska",
                 map: map
             });
 
@@ -469,9 +477,15 @@
                 map: map
             });
 
+            var markerSCC = new google.maps.Marker({
+                position: SCC,
+                title: "SCC - Deadhorse, Alaska",
+                map: map
+            });
+
             var markerRDM = new google.maps.Marker({
                 position: RDM,
-                title: "RDM - Remond, Oregon",
+                title: "RDM - Redmond, Oregon",
                 map: map
             });
 
@@ -1119,6 +1133,30 @@
                 strokeWeight: 2
             });
 
+            var ANC_SCC_FP = new google.maps.Polyline({
+                path: [ANC, SCC],
+                geodesic: true,
+                strokeColor: redColor,
+                strokeOpacity: 1.0,
+                strokeWeight: 2
+            });
+
+            var SCC_BRW_FP = new google.maps.Polyline({
+                path: [SCC, BRW],
+                geodesic: true,
+                strokeColor: redColor,
+                strokeOpacity: 1.0,
+                strokeWeight: 2
+            });
+
+            var BRW_FAI_FP = new google.maps.Polyline({
+                path: [BRW, FAI],
+                geodesic: true,
+                strokeColor: redColor,
+                strokeOpacity: 1.0,
+                strokeWeight: 2
+            });
+
             LAX_HND_FP.setMap(map);
             HND_CDG_FP.setMap(map);
             CDG_EZE_FP.setMap(map);
@@ -1189,8 +1227,10 @@
             EWR_LAX_FP.setMap(map);
             ATL_EZE_FP.setMap(map);
             SFO_RDM_FP.setMap(map);
-           
 
+            BRW_FAI_FP.setMap(map);
+            SCC_BRW_FP.setMap(map);
+            ANC_SCC_FP.setMap(map);
 
 
        
