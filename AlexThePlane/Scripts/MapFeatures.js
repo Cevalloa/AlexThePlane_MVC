@@ -194,14 +194,17 @@
 
             /* International */
             var AMS = { lat: 52.3105386, lng: 4.7682744 }
-            var CDG = { lat: 49.0096906, lng: 2.5479245, }
+            var BCN = { lat: 41.297449, lng: 2.0811054}
+            var CDG = { lat: 49.0096906, lng: 2.5479245 }
             var EZE = { lat: -34.8150044, lng: -58.5370171}
             var FRA = { lat: 50.037936, lng: 8.5599578 }
             var GOT = { lat: 57.6688018, lng: 12.29012 }
             var HKG = { lat: 22.2976146, lng: 113.9301244 }
             var HND = { lat: 35.5493932, lng: 139.7798386 }
             var KEF = { lat: 63.9868067, lng: -22.6279668 }
+            var LHR = { lat: 51.4700223, lng: -0.4542955}
             var MEX = { lat: 19.4360812, lng: -99.0741023 }
+            var NRT = { lat: 35.771991, lng: 140.3906614}
             var MUC = { lat: 48.3536656, lng: 11.7728339 }
             var SJD = { lat: 23.1455358, lng: -109.7204552}
             var UIO = { lat: -0.1225821, lng: -78.3607524 }
@@ -210,6 +213,13 @@
             var markerAMS = new google.maps.Marker({
                 position: AMS,
                 title: "AMS - Amsterdam, Netherlands",
+                /* icon: image, */
+                map: map
+            });
+
+            var markerBCN = new google.maps.Marker({
+                position: BCN,
+                title: "BCN - Barcelona, Spain",
                 /* icon: image, */
                 map: map
             });
@@ -258,9 +268,21 @@
                 map: map
             });
 
+            var markerLHR = new google.maps.Marker({
+                position: LHR,
+                title: "LHR - London, England",
+                map: map
+            });
+
             var markerMEX = new google.maps.Marker({
                 position: MEX,
                 title: "MEX - Mexico City, Mexico",
+                map: map
+            });
+
+            var markerNRT = new google.maps.Marker({
+                position: NRT,
+                title: "NRT - Tokyo, Japan",
                 map: map
             });
 
@@ -304,6 +326,7 @@
             var GEG = { lat: 47.6217172, lng: -117.5370055 }
             var HLN = { lat: 46.6100257, lng: -111.989929 }
             var HNL = { lat: 21.3211849, lng: -157.9307321 }
+            var JNU = { lat: 58.3579834, lng: -134.5853678}
             var KOA = { lat: 19.736916, lng: -156.0451186}
             var KTN = { lat: 55.3554136, lng: -131.7127544 }
             var IAH = { lat: 29.9902245, lng: -95.336782 }
@@ -408,6 +431,12 @@
             var markerHNL = new google.maps.Marker({
                 position: HNL,
                 title: "HNL - Honolulu, Hawaii",
+                map: map
+            });
+
+            var markerJNU = new google.maps.Marker({
+                position: JNU,
+                title: "JNU - Juneau, Alaska",
                 map: map
             });
 
@@ -1157,6 +1186,62 @@
                 strokeWeight: 2
             });
 
+            var NRT_CDG_FP = new google.maps.Polyline({
+                path: [NRT, CDG],
+                geodesic: true,
+                strokeColor: redColor,
+                strokeOpacity: 1.0,
+                strokeWeight: 2
+            });
+
+            var SEA_HND_FP = new google.maps.Polyline({
+                path: [SEA, HND],
+                geodesic: true,
+                strokeColor: redColor,
+                strokeOpacity: 1.0,
+                strokeWeight: 2
+            });
+
+            var CDG_BCN_FP = new google.maps.Polyline({
+                path: [CDG, BCN],
+                geodesic: true,
+                strokeColor: redColor,
+                strokeOpacity: 1.0,
+                strokeWeight: 2
+            });
+
+            var BCN_LHR_FP = new google.maps.Polyline({
+                path: [BCN, LHR],
+                geodesic: true,
+                strokeColor: redColor,
+                strokeOpacity: 1.0,
+                strokeWeight: 2
+            });
+
+            var LHR_AMS_FP = new google.maps.Polyline({
+                path: [LHR, AMS],
+                geodesic: true,
+                strokeColor: redColor,
+                strokeOpacity: 1.0,
+                strokeWeight: 2
+            });
+
+            var HNL_PDX_FP = new google.maps.Polyline({
+                path: [HNL, PDX],
+                geodesic: true,
+                strokeColor: redColor,
+                strokeOpacity: 1.0,
+                strokeWeight: 2
+            });
+
+            var SEA_JNU_FP = new google.maps.Polyline({
+                path: [SEA, JNU],
+                geodesic: true,
+                strokeColor: redColor,
+                strokeOpacity: 1.0,
+                strokeWeight: 2
+            });
+
             LAX_HND_FP.setMap(map);
             HND_CDG_FP.setMap(map);
             CDG_EZE_FP.setMap(map);
@@ -1232,7 +1317,14 @@
             SCC_BRW_FP.setMap(map);
             ANC_SCC_FP.setMap(map);
 
+            NRT_CDG_FP.setMap(map);
+            SEA_HND_FP.setMap(map);
+            CDG_BCN_FP.setMap(map);
+            BCN_LHR_FP.setMap(map);
+            LHR_AMS_FP.setMap(map);
 
+            HNL_PDX_FP.setMap(map);
+            SEA_JNU_FP.setMap(map);
        
 
 
