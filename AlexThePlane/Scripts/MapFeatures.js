@@ -202,10 +202,14 @@
             var HKG = { lat: 22.2976146, lng: 113.9301244 }
             var HND = { lat: 35.5493932, lng: 139.7798386 }
             var KEF = { lat: 63.9868067, lng: -22.6279668 }
-            var LHR = { lat: 51.4700223, lng: -0.4542955}
+            var LHR = { lat: 51.4700223, lng: -0.4542955 }
+            var LIM = { lat: -12.0240474, lng: -77.11423}
             var MEX = { lat: 19.4360812, lng: -99.0741023 }
             var NRT = { lat: 35.771991, lng: 140.3906614}
             var MUC = { lat: 48.3536656, lng: 11.7728339 }
+            var MVD = { lat: -34.837045, lng: -56.0183703 }
+            var PTY = { lat: 9.0561, lng: -79.3866891 }
+            var SCL = { lat: -33.3936116, lng: -70.7956784}
             var SJD = { lat: 23.1455358, lng: -109.7204552}
             var UIO = { lat: -0.1225821, lng: -78.3607524 }
             var YVR = { lat: 49.1966948, lng: -123.1837063}
@@ -274,6 +278,13 @@
                 map: map
             });
 
+            var markerLIM = new google.maps.Marker({
+                position: LIM,
+                title: "LIM - Lima, Peru",
+                map: map
+   
+            });
+
             var markerMEX = new google.maps.Marker({
                 position: MEX,
                 title: "MEX - Mexico City, Mexico",
@@ -289,6 +300,24 @@
             var markerMUC = new google.maps.Marker({
                 position: MUC,
                 title: "MUC - Munich, Germany",
+                map: map
+            });
+
+            var markerMVD = new google.maps.Marker({
+                position: MVD,
+                title: "MVD - Montevideo, Uruguay",
+                map: map
+            });
+
+            var markerPTY = new google.maps.Marker({
+                position: PTY,
+                title: "PTY - Panama City, Panama",
+                map: map
+            });
+
+            var markerSCL = new google.maps.Marker({
+                position: SCL,
+                title: "SCL - Santiago, Chile",
                 map: map
             });
 
@@ -313,6 +342,7 @@
 
             /* Domestic */
             var ABQ = { lat: 35.0433377, lng: -106.6151025 }
+            var ADK = { lat: 51.8792412, lng: -176.6473426}
             var ANC = { lat: 61.1758889, lng: -149.9922731 }
             var ATL = { lat: 33.6407326, lng: -84.4298941 }
             var AUS = { lat: 30.1974338, lng: -97.6684998 }
@@ -336,6 +366,7 @@
             var LAX = { lat: 33.9414147, lng: -118.4105475 }
             var OGG = { lat: 20.8967924, lng: -156.4351319}
             var ORD = { lat: 41.9741665, lng: -87.9095154 }
+            var OMA = { lat: 41.3019149, lng: -95.8974178}
             var PDX = { lat: 45.5897694, lng: -122.5972882 }
             var RDM = { lat: 44.2494909, lng: -121.1640929 }
             var RNO = { lat: 39.4995907, lng: -119.7680951}
@@ -346,13 +377,19 @@
             var SLC = { lat: 40.7899404, lng: -111.9790706}
             var SMF = { lat: 38.6950854, lng: -121.5900648 }
             var SNA = { lat: 33.6761945, lng: -117.8696646}
-            var STS = { lat: 38.4267288, lng: -122.9112976,}
+            var STS = { lat: 38.4267288, lng: -122.9112976}
             var TUS = { lat: 32.1145102, lng: -110.9414156 }
 
             /* Markers */
             var markerABQ = new google.maps.Marker({
                 position: ABQ,
                 title: "ABQ - Albuquerque, New Mexico",
+                map: map
+            });
+
+            var markerADK = new google.maps.Marker({
+                position: ADK,
+                title: "ADK - Adak, Alaska",
                 map: map
             });
 
@@ -491,6 +528,12 @@
             var markerORD = new google.maps.Marker({
                 position: ORD,
                 title: "ORD - Chicago, Illinois",
+                map: map
+            });
+
+            var markerOMA = new google.maps.Marker({
+                position: OMA,
+                title: "OMA - Omaha, Nebraska",
                 map: map
             });
 
@@ -1242,6 +1285,64 @@
                 strokeWeight: 2
             });
 
+            var LAX_LIM_FP = new google.maps.Polyline({
+                path: [LAX, LIM],
+                geodesic: true,
+                strokeColor: redColor,
+                strokeOpacity: 1.0,
+                strokeWeight: 2
+            });
+
+            var LIM_SCL_FP = new google.maps.Polyline({
+                path: [LIM, SCL],
+                geodesic: true,
+                strokeColor: redColor,
+                strokeOpacity: 1.0,
+                strokeWeight: 2
+            });
+
+            var SCL_MVD_FP = new google.maps.Polyline({
+                path: [SCL, MVD],
+                geodesic: true,
+                strokeColor: redColor,
+                strokeOpacity: 1.0,
+                strokeWeight: 2
+            });
+
+            var MVD_PTY_FP = new google.maps.Polyline({
+                path: [MVD, PTY],
+                geodesic: true,
+                strokeColor: redColor,
+                strokeOpacity: 1.0,
+                strokeWeight: 2
+            });
+
+            var PTY_LAX_FP = new google.maps.Polyline({
+                path: [PTY, LAX],
+                geodesic: true,
+                strokeColor: redColor,
+                strokeOpacity: 1.0,
+                strokeWeight: 2
+            });
+
+            var ANC_ADK_FP = new google.maps.Polyline({
+                path: [ANC, ADK],
+                geodesic: true,
+                strokeColor: redColor,
+                strokeOpacity: 1.0,
+                strokeWeight: 2
+            });
+
+            var SEA_OMA_FP = new google.maps.Polyline({
+                path: [SEA, OMA],
+                geodesic: true,
+                strokeColor: redColor,
+                strokeOpacity: 1.0,
+                strokeWeight: 2
+            });
+
+            
+
             LAX_HND_FP.setMap(map);
             HND_CDG_FP.setMap(map);
             CDG_EZE_FP.setMap(map);
@@ -1325,6 +1426,14 @@
 
             HNL_PDX_FP.setMap(map);
             SEA_JNU_FP.setMap(map);
+            LAX_LIM_FP.setMap(map);
+            LIM_SCL_FP.setMap(map);
+            SCL_MVD_FP.setMap(map);
+            MVD_PTY_FP.setMap(map);
+            PTY_LAX_FP.setMap(map);
+
+            ANC_ADK_FP.setMap(map);
+            SEA_OMA_FP.setMap(map);
        
 
 
