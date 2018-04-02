@@ -368,6 +368,7 @@
             var ORD = { lat: 41.9741665, lng: -87.9095154 }
             var OMA = { lat: 41.3019149, lng: -95.8974178}
             var PDX = { lat: 45.5897694, lng: -122.5972882 }
+            var PHX = { lat: 33.4372686, lng: -112.0077881}
             var RDM = { lat: 44.2494909, lng: -121.1640929 }
             var RNO = { lat: 39.4995907, lng: -119.7680951}
             var SEA = { lat: 47.4502499, lng: -122.3110105 }
@@ -553,7 +554,13 @@
                 position: SCC,
                 title: "SCC - Deadhorse, Alaska",
                 map: map
-            });
+             });
+
+        var markerPHX = new google.maps.Marker({
+            position: PHX,
+            title: "PHX - Phoenix, Arizona",
+            map: map
+        });
 
             var markerRDM = new google.maps.Marker({
                 position: RDM,
@@ -1339,7 +1346,23 @@
                 strokeColor: redColor,
                 strokeOpacity: 1.0,
                 strokeWeight: 2
-            });
+        });
+
+        var BOI_SAN_FP = new google.maps.Polyline({
+            path: [BOI, SAN],
+            geodesic: true,
+            strokeColor: redColor,
+            strokeOpacity: 1.0,
+            strokeWeight: 2
+        });
+
+        var SEA_PHX_FP = new google.maps.Polyline({
+            path: [SEA, PHX],
+            geodesic: true,
+            strokeColor: redColor,
+            strokeOpacity: 1.0,
+            strokeWeight: 2
+        });
 
             
 
@@ -1433,7 +1456,9 @@
             PTY_LAX_FP.setMap(map);
 
             ANC_ADK_FP.setMap(map);
-            SEA_OMA_FP.setMap(map);
+        SEA_OMA_FP.setMap(map);
+        BOI_SAN_FP.setMap(map);
+        SEA_PHX_FP.setMap(map);
        
 
 
