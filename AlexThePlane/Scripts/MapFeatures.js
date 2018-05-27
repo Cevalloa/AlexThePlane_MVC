@@ -210,7 +210,8 @@
             var MVD = { lat: -34.837045, lng: -56.0183703 }
             var PTY = { lat: 9.0561, lng: -79.3866891 }
             var SCL = { lat: -33.3936116, lng: -70.7956784}
-            var SJD = { lat: 23.1455358, lng: -109.7204552}
+            var SJD = { lat: 23.1455358, lng: -109.7204552 }
+            var SYD = { lat: -33.9399228, lng: 151.1752764 }
             var UIO = { lat: -0.1225821, lng: -78.3607524 }
             var YVR = { lat: 49.1966948, lng: -123.1837063}
 
@@ -325,7 +326,13 @@
                 position: SJD,
                 title: "SJD - Los Cabos, Mexico",
                 map: map
-            });
+        });
+
+        var markerSYD = new google.maps.Marker({
+            position: SYD,
+            title: "SYD - Sydney, Australia",
+            map: map
+        });
 
             var markerUIO = new google.maps.Marker({
                 position: UIO,
@@ -366,7 +373,8 @@
             var LAX = { lat: 33.9414147, lng: -118.4105475 }
             var OGG = { lat: 20.8967924, lng: -156.4351319}
             var ORD = { lat: 41.9741665, lng: -87.9095154 }
-            var OMA = { lat: 41.3019149, lng: -95.8974178}
+        var OMA = { lat: 41.3019149, lng: -95.8974178 }
+        var MCI = { lat: 39.2991181, lng: -94.7107786}
             var PDX = { lat: 45.5897694, lng: -122.5972882 }
             var PHX = { lat: 33.4372686, lng: -112.0077881}
             var RDM = { lat: 44.2494909, lng: -121.1640929 }
@@ -513,6 +521,12 @@
                 title: "OAK - Oakland, California",
                 map: map
             });
+
+        var markerMCI = new google.maps.Marker({
+            position: MCI,
+            title: "MCI - Kansas City, Missouri",
+            map: map
+        });
 
             var markerLAX = new google.maps.Marker({
                 position: LAX,
@@ -1364,6 +1378,38 @@
             strokeWeight: 2
         });
 
+        var SFO_SYD_FP = new google.maps.Polyline({
+            path: [SFO, SYD],
+            geodesic: true,
+            strokeColor: redColor,
+            strokeOpacity: 1.0,
+            strokeWeight: 2
+        });
+
+
+        var SYD_LAX_FP = new google.maps.Polyline({
+            path: [SYD, LAX],
+            geodesic: true,
+            strokeColor: redColor,
+            strokeOpacity: 1.0,
+            strokeWeight: 2
+        });
+
+        var BOI_SAN = new google.maps.Polyline({
+            path: [BOI, SAN],
+            geodesic: true,
+            strokeColor: redColor,
+            strokeOpacity: 1.0,
+            strokeWeight: 2
+        });
+
+        var SEA_MCI_FP = new google.maps.Polyline({
+            path: [SEA, MCI],
+            geodesic: true,
+            strokeColor: redColor,
+            strokeOpacity: 1.0,
+            strokeWeight: 2
+        });
             
 
             LAX_HND_FP.setMap(map);
@@ -1410,7 +1456,8 @@
             SEA_FAI_FP.setMap(map);
             SEA_SNA_FP.setMap(map);
             SEA_OAK_FP.setMap(map);
-            SEA_RDM_FP.setMap(map);
+        SEA_RDM_FP.setMap(map);
+        SEA_MCI_FP.setMap(map);
 
             SNA_STS_FP.setMap(map);
             STS_LAX_FP.setMap(map);
@@ -1459,7 +1506,9 @@
         SEA_OMA_FP.setMap(map);
         BOI_SAN_FP.setMap(map);
         SEA_PHX_FP.setMap(map);
-       
+        SFO_SYD_FP.setMap(map);
+        SYD_LAX_FP.setMap(map);
+        BOI_SAN_FP.setMap(map);
 
 
  /*       var image = {
